@@ -64,3 +64,47 @@ body{
     justify-content:center;
     gap: 6px;
 }
+.expr{
+    font-size: 14px;
+    color: var(--muted);
+    text-align:right;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.result{
+    font-size: 34px;
+    font-weight: 800;
+    text-align:right;
+    letter-spacing: .2px;
+}
+.keys{
+    margin-top: 14px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.key{
+    appearance:none;
+    border: 1px solid var(--btnBorder);
+    background: var(--btn);
+    border-radius: 16px;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    box-shadow: 0 10px 22px rgba(0,40,90,.10);
+    cursor:pointer;
+    user-select:none;
+    transition: transform .08s ease, background .15s ease;
+}
+
+.key:hover{ transform: translateY(5px); }
+.key:active{ transform: translateY(1px) scale(.99); }
+
+.key.soft{
+    font-size: 15px;
+    color: rgba(10,20,35,.7);
+}
+
