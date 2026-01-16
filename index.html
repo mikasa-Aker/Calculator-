@@ -14,9 +14,24 @@
 <main class="phone">
     <section class="calc" aria-label="Calculator">
         <!--Display-->
-        <div class="expr" id="expr">6000 / 2 + 3227</div>
-        <div class="result" id="result">=12,454</div>
-    </section>
+        <div class="display" aria-live="polite"></div>
+            <div class="expr" id="expr">6000 / 2 + 3227</div>
+            <div class="result" id="result">=12,454</div>
+        </div>
+        <!--buttons-->
+
+        <div classs="keys" role="group" aria-label="Calculator buttons">
+            <!--row-1-->
+            <button class="key soft" data-action="paren">()</button>
+            <button class="key soft" data-action="pm">±</button>
+            <button class="key soft" data-action="percent">%</button>
+            <button class="key op" data-value="÷">÷</button>
+        </div>   
+    
+    
+    
+    
+        </section>
 
 </main>
 </body>
