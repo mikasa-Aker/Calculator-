@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css"/>
+    
 </head>
 <body>
     <div class="bg"></div><!--body-->
 <main class="phone">
     <section class="calc" aria-label="Calculator">
         <!--Display-->
-        <div class="display" aria-live="polite">
-            <div class="expr" id="expr">6000 / 2 + 3227</div>
-            <div class="result" id="result">=12,454</div>
-        </div>
+            <!-- Display -->
+            <div class="display">
+                <div class="expr" id="expr">6000 ÷ 2 + 3227</div>
+                <div class="result" id="result">=12,454</div>
+            </div>
         <!--buttons-->
-
         <div class="keys" role="group" aria-label="Calculator buttons">
             <!--row-1-->
             <button class="key soft" data-action="paren">()</button>
@@ -50,6 +51,7 @@
             <button class="key ghost" data-action="back">⌫</button>
         </div>   
         </section>
-
 </main>
+<script src="script.js"></script>
 </body>
+</html>
